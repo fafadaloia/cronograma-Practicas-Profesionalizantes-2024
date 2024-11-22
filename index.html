@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prácticas Profesionalizantes 2024 - Cronograma</title>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #161a79;
+            font-family: 'Exo 2', sans-serif;
+            color: #ffffff;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            min-height: 100vh;
+            padding: 20px;
+            font-size: 22px;
+            position: relative; /* Necesario para la posición absoluta del título */
+        }
+
+        .titulo {
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .schedule-container {
+            background: transparent;
+            border-radius: 8px;
+            padding: 20px;
+            max-width: 800px;
+            width: 100%;
+            margin: 0 auto;
+            align-content: left;
+        }
+
+        .schedule-item {
+            display: grid;
+            grid-template-columns: 100px 225px 1fr;
+            grid-gap: 10px;
+            align-items: center;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .schedule-item img {
+            justify-self: start;
+        }
+
+        .time {
+            font-weight: bold;
+            color: #8dbfff;
+        }
+
+        .details {
+            text-align: left;
+            align-content: center;
+        }
+
+        .separator {
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #8dbfff;
+        }
+
+        .project-logo {
+            display: block;
+            margin: 0 auto 10px auto;
+        }
+
+        .ver-mas {
+            display: inline-block;
+            width: 100px;
+            height: 40px;
+            color: #000000;
+            background-color: #ffae00;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            grid-column: 2 / 3;
+            text-align: center;
+            line-height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <img src="titulo.png" alt="Prácticas Profesionalizantes 2024" class="titulo">
+    <div class="schedule-container">
+        <div class="schedule-item">
+            <div class="time">17:15</div>
+            <div class="details" style="grid-column: span 2;">Palabras del Rector y Coordinador de las PP<br>QUESTA, Carlos</div>
+            <div class="separator"></div>
+        </div>
+        
+        <div class="schedule-item">
+            <div class="time">17:20</div>
+            <div class="details" style="grid-column: span 2;">Palabras del Regente Técnico<br>FALETTI, Edgardo</div>
+            <div class="separator"></div>
+        </div>
+        
+        <div class="schedule-item">
+            <div class="time">17:30</div>
+            <div class="schedule-item img">
+                <img width="205" height="98" src="logospps/proyecto1.png" alt="HTJS" class="project-logo">
+            </div>
+            <div class="details">
+                COLOM, Agustín<br>
+                GASAVE, Santiago
+            </div>
+            <a href="https://www.ilstecar.com/pp/dmlinfo" class="ver-mas" target="_blank">Ver más</a>
+            <div class="separator"></div>
+        </div>
+        <div class="schedule-item">
+            <div class="time">17:50</div>
+            <div class="schedule-item img">
+                <img width="205" height="60" src="logospps/proyecto2.png" alt="NeKa" class="project-logo">
+            </div>
+            <div class="details">
+                ANDRADE, Santiago<br>
+                BENÍTEZ, Nicolás<br>
+                D'ALOIA, Facundo<br>
+                SUÁREZ, Marcos
+            </div>
+            <a href="https://www.ilstecar.com/pp/latindata" class="ver-mas" target="_blank">Ver más</a>
+            <div class="separator"></div>
+        </div>
+        <div class="schedule-item">
+            <div class="time">18:15</div>
+            <div class="schedule-item img">
+                <img width="205" height="98" src="logospps/proyecto3.png" alt="Biblioteca Escolar" class="project-logo">
+            </div>
+            <div class="details">
+                GARGANO, Lautaro<br>
+                LOBOS, Thiago
+            </div>
+            <a href="https://www.ilstecar.com/pp/bibliotecainfo" class="ver-mas" target="_blank">Ver más</a>
+            <div class="separator"></div>
+        </div>
+        <div class="schedule-item">
+            <div class="time">18:30</div>
+            <div class="schedule-item img">
+                <img width="205" height="98" src="logospps/proyecto4.png" alt="DHL" class="project-logo">
+            </div>
+            <div class="details">
+                BAKAL, Franco<br>
+                COCA, Juan Cruz
+            </div>
+            <a href="https://www.ilstecar.com/pp/ecea" class="ver-mas" target="_blank">Ver más</a>
+        </div>
+    </div>
+</body>
+</html>
