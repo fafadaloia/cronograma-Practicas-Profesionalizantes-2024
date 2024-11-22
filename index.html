@@ -18,12 +18,16 @@
             min-height: 100vh;
             padding: 20px;
             font-size: 22px;
-            position: relative; /* Necesario para la posición absoluta del título */
+            position: relative;
         }
 
         .titulo {
             display: block;
             margin-bottom: 20px;
+        }
+
+        .titulo p {
+            text-align: center;
         }
 
         .schedule-container {
@@ -85,6 +89,7 @@
             grid-column: 2 / 3;
             text-align: center;
             line-height: 30px;
+        }
 
         p {
             font-family: 'Exo 2', sans-serif;
@@ -93,12 +98,13 @@
             margin: 0;
             max-width: 600px;
         }
-        }
     </style>
 </head>
 <body>
-    <img src="titulo.png" alt="Prácticas Profesionalizantes 2024" class="titulo">
-    <p>CRONOGRAMA</p>
+    <div class="titulo">
+        <img src="titulo.png" alt="Prácticas Profesionalizantes 2024">
+        <p>CRONOGRAMA</p>
+    </div>
     <div class="schedule-container">
         <div class="schedule-item">
             <div class="time">17:15</div>
