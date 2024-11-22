@@ -13,7 +13,7 @@
             margin: 0;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
             flex-direction: column;
             min-height: 100vh;
             padding: 20px;
@@ -21,22 +21,13 @@
             position: relative;
         }
 
-        .titulo-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-            margin-bottom: 20px;
-        }
-
         .titulo {
             display: block;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
 
         .titulo p {
             text-align: center;
-            width: 100%;
         }
 
         .schedule-container {
@@ -46,6 +37,7 @@
             max-width: 800px;
             width: 100%;
             margin: 0 auto;
+            align-content: left;
         }
 
         .schedule-item {
@@ -109,10 +101,10 @@
     </style>
 </head>
 <body>
-    <div class="titulo-container">
-        <img src="titulo.png" alt="Prácticas Profesionalizantes 2024" class="titulo">
-        <p>CRONOGRAMA</p>
+    <div class="titulo">
+        <img src="titulo.png" alt="Prácticas Profesionalizantes 2024">
     </div>
+    <p>CRONOGRAMA</p>
     <div class="schedule-container">
         <div class="schedule-item">
             <div class="time">17:15</div>
